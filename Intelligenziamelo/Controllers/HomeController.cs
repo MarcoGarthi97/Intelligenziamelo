@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Intelligenziamelo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,13 @@ namespace Intelligenziamelo.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
+        {
+            Atlas atlas = new Atlas();
+            atlas.AuthenticationLogin("MarcoGarthi", "ciao123");
+            return View();
+        }
+
+        public ActionResult Login()
         {
             return View();
         }
