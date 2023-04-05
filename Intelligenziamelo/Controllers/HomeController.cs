@@ -11,8 +11,6 @@ namespace Intelligenziamelo.Controllers
     {
         public ActionResult Index()
         {
-            Atlas atlas = new Atlas();
-            atlas.AuthenticationLogin("MarcoGarthi", "ciao123");
             return View();
         }
 
