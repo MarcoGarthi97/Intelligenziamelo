@@ -1,55 +1,106 @@
 ﻿@{
     Layout = null;
 }
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<link href="~/Content/css/Login.css" rel="stylesheet" />
+<script src="~/Scripts/js/Login.js"></script>
 <style>
-
+    /*
+        probabile palette
+        11001c
+290025
+35012c
+4f0147
+3a015c
+    */
 </style>
 
-<div class="card" id="card">
-    <div class="row">
-        <div class="col-6" id="card-image">
-            <div class="row">
-                <img class="card-img-top rounded" id="logo" src="~/Images/LogoDPG.png" alt="Card image cap">
-
-            </div>
-            <div class="row">
-                <img class="card-img-top" id="" src="~/Images/Login.png" alt="Card image cap">
-            </div>
-
-        </div>
-        <div class="col-6" id="card-body">
-            <div class="card-body">
-                <div class="row">
-                    <p id="title" class="text-center">Rapportinamelo</p>
-                </div>
-
-                <div class="row">
-                    <p id="subtitle" class="text-center">Login.</p>
-                </div>
-                <div class="container" id="card-body-container">
-                    <div class="row">
-                        <div class="form-floating">
-                            <input type="text" id="username" class="form-control" placeholder="Username">
-                            <label for="username" class="labe" style="color: black;">Username</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" id="password" class="form-control" placeholder="Password">
-                            <label for="password" class="labe" style="color: black;">Password</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="button" class="btn btn-primary" id="btn-login" value="Login">
+<div class="container-center-horizontal">
+    <form class="login screen " data-id="1:95" name="form3" action="form3" method="post">
+        <input type="text" name="trapit" value="" style="display:none;">
+        <div class="bg-b8DrbD" data-id="1:96"></div>
+        <img class="intelligenziamelo-ia-b8DrbD" data-id="1:97"
+            src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642f0048245d8a08abf30c75/img/intelligenziameloia.png"
+            alt="IntelligenziameloIA">
+        <div class="group-4-b8DrbD" data-id="104:3">
+            <a href="javascript:SubmitForm('form3')">
+                <div class="login-with-google-xKPdzs login-with-google" data-id="1:164" data-hotspot-id="hp-0">
+                    <div class="rectangle-2-nTn8tc" data-id="1:100"></div>
+                    <div class="group-1-nTn8tc" data-id="1:129">
+                        <img class="search-1-LYXnG6" data-id="1:121"
+                            src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/search-1.svg"
+                            alt="search 1">
+                        <div class="login-with-google-LYXnG6 login-with-google poppins-normal-thunder-16px"
+                            data-id="1:128">Login with Google</div>
                     </div>
                 </div>
-            </div>
+            </a><a href="javascript:SubmitForm('form3')">
+                <div class="login-with-facebook-xKPdzs login-with-facebook" data-id="1:163" data-hotspot-id="hp-1">
+                    <div class="rectangle-3-z9jLSy" data-id="1:131"></div>
+                    <div class="group-2-z9jLSy" data-id="1:139">
+                        <div class="login-with-facebook-m40qll login-with-facebook poppins-normal-thunder-16px"
+                            data-id="1:138">Login with Facebook</div><img class="vector-m40qll" data-id="1:127"
+                            src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/vector.svg"
+                            alt="Vector">
+                    </div>
+                </div>
+            </a>
         </div>
-    </div>
+        <div class="or-b8DrbD or" data-id="1:143">
+            <img class="line-1-SFGlj8" data-id="1:140"
+                src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/line-1.svg"
+                alt="Line 1"><img class="line-2-SFGlj8" data-id="1:142"
+                src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/line-2.svg"
+                alt="Line 2">
+            <div class="or-SFGlj8 or poppins-normal-thunder-16px" data-id="1:141">OR</div>
+        </div>
+        <div class="group-5-b8DrbD" data-id="104:4">
+            <div class="forgot-password-AGbWSB" data-id="1:160">Forgot Password?</div>
+            <div class="email-AGbWSB email" data-id="1:165">
+                <div class="rectangle-4-kulWhi" data-id="1:144"></div><img class="icon-mail-kulWhi" data-id="1:146"
+                    src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/vector-1.svg"
+                    alt="icon-mail">
+                <div class="email-kulWhi email" data-id="1:150">Username</div><input class="examplegmailcom-kulWhi"
+                    data-id="1:151" name="examplegmailcom" placeholder="example" type="text" id="username">
+            </div>
+            <div class="password-AGbWSB password" data-id="1:166">
+                <div class="rectangle-5-jXY1xD" data-id="1:152"></div><img class="icon-key-jXY1xD" data-id="1:148"
+                    src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/group@2x.png"
+                    alt="icon-key">
+                <div class="password-jXY1xD password" data-id="1:154">Password</div><input class="x-jXY1xD"
+                    data-id="1:155" name="***********" placeholder="***********" type="password" id="password"><img
+                    class="icon-eye-jXY1xD" data-id="1:156"
+                    src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642eec10813eaec3b73ff26a/img/bi-eye-fill.svg"
+                    alt="icon-eye">
+            </div><a id="login">
+                <div class="button-AGbWSB" data-id="1:167" data-hotspot-id="hp-2">
+                    <div class="rectangle-6-vEaSh4" data-id="1:161"></div>
+                    <div class="login-vEaSh4" data-id="1:162">Login</div>
+                </div>
+            </a>
+            <div class="remember-me-AGbWSB remember-me" data-id="1:171">
+                <div class="remember-me-ZinpLJ remember-me poppins-normal-thunder-16px" data-id="1:168">
+                    Remember me
+                </div>
+                <div class="check-ZinpLJ" data-id="1:169"></div>
+            </div>
+            <p class="dont-have-an-account-register-AGbWSB" data-id="1:170">
+                <span class="span0-QNuIxb">
+                    Don't have an account?
+                </span><span class="span1-QNuIxb">Register</span>
+            </p>
+        </div><img class="x249-1-b8DrbD" data-id="104:5"
+            src="https://cdn.animaapp.com/projects/642eeb97f819b5a83e2e2e07/releases/642f0048245d8a08abf30c75/img/249-1.png"
+            alt="249 1">
+    </form>
 </div>

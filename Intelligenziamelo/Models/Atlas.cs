@@ -1,4 +1,5 @@
-﻿using Intelligenziamelo.Properties;
+﻿using Intelligenziamelo.Controllers;
+using Intelligenziamelo.Properties;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Intelligenziamelo.Models
     {
         private string connectionString = File.ReadAllText(Settings.Default.PathAtlasCredentials);
 
-        public async Task<bool> AuthenticationLogin(string username, string password)
+        public async Task<bool> Login(string username, string password)
         {
             try
             {
@@ -28,14 +29,22 @@ namespace Intelligenziamelo.Models
                 foreach(var user in results)
                 {
                     if(user.Password == password)
+                    {
+                        HomeController.userModel = new UserModel();
+                        HomeController.userModel.Username = username;
+                        HomeController.userModel.Password = password;
+                        HomeController.userModel.Login = true;
+
                         return true;
+                    }
+                        
                 }
 
                 return false;
             }
             catch (Exception ex)
             {
-                return true;
+                return false;
             }
         }
     }
