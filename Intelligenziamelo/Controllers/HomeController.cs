@@ -47,12 +47,19 @@ namespace Intelligenziamelo.Controllers
 
             return Task.FromResult<bool>(result);
         }
+
         public ActionResult GoToHomePage()
         {
             if(userModel.Login)
                 return Json(new { redirectToUrl = Url.Action("HomePage", "Home") });
 
             return View();
+        }
+
+        public Task<bool> LoadDataSet(HttpPostedFileBase file)
+        {
+            var result = FileSystem.CheckDataSet(file);
+            return Task.FromResult<bool>(true);
         }
     }
 }

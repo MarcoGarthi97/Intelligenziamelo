@@ -5,5 +5,8 @@
     <Setting Name="PathAtlasCredentials" Type="System.String" Scope="Application">
       <Value Profile="(Default)">C:\Users\marco\source\repos\Intelligenziamelo\MyCredentials\AtlasCredentials.txt</Value>
     </Setting>
+    <Setting Name="DirectoryFileSystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\marco\Documents\Project\Intelligenziamelo\</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

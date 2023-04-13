@@ -31,5 +31,14 @@ namespace Intelligenziamelo.Properties {
                 return ((string)(this["PathAtlasCredentials"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\marco\\Documents\\Project\\Intelligenziamelo\\")]
+        public string DirectoryFileSystem {
+            get {
+                return ((string)(this["DirectoryFileSystem"]));
+            }
+        }
     }
 }
