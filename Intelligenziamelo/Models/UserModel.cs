@@ -7,8 +7,10 @@ namespace Intelligenziamelo.Models
 {
     public class UserModel
     {
-        public bool Login { get; set; }   
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public bool Login { get; set; }
+        public User User { get; set; }
+        public DescriptionUser DescriptionUser { get; set; }
+        public Model Model { get; set; }
+
     }
 }

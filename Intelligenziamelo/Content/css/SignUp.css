@@ -5,7 +5,6 @@
 /* The following line is used to measure usage of this code in production. For more info see our usage billing page */
 @import url("https://px.animaapp.com/642eeb95245d8a08abf30c12.642eeb968a12d94e351bef36.8UkUS3o.hch.png");
 
-
 [dark-scroll]::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -23,6 +22,10 @@
 
 [dark-scroll]::-webkit-scrollbar-thumb:hover {
     background-color: #5a5a5a;
+}
+
+option{
+    background-color: var(--blue-charcoal);
 }
 
 .screen textarea:focus,
@@ -227,12 +230,28 @@ input:focus {
     --font-family-poppins: "Poppins", Helvetica;
 }
 
+.poppins-normal-romance-12px {
+    color: var(--romance);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.poppins-bold-romance-16px {
+    color: var(--romance);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+}
+
 :root {}
 
 
-/* screen - login */
+/* screen - sign-up */
 
-.login {
+.sign-up {
     background-color: var(--blue-charcoal);
     border: 1px none;
     height: 1080px;
@@ -243,33 +262,25 @@ input:focus {
     width: 1920px;
 }
 
-.login .group-b8DrbD {
-    height: 848px;
-    left: 971px;
-    top: 232px;
-    width: 949px;
-}
-
-.login .privacy-policy-rafiki-1-b8DrbD {
+.sign-up .group-rEJZuq {
     background-color: transparent;
-    height: 884px;
-    left: 37px;
-    mix-blend-mode: normal;
+    height: 987px;
+    left: 0px;
     position: absolute;
-    top: 98px;
-    width: 884px;
+    top: 0px;
+    width: 1019px;
 }
 
-.login .group-6-b8DrbD {
+.sign-up .group-6-rEJZuq {
     background-color: transparent;
     height: 940px;
-    left: 960px;
+    left: 176px;
     position: absolute;
     top: 70px;
     width: 790px;
 }
 
-.login .bg-DoXnc9 {
+.sign-up .bg-YrOcOp {
     background-color: #020f55;
     border-radius: 8px;
     box-shadow: 0px 0px 4px #00000014;
@@ -281,7 +292,7 @@ input:focus {
     width: 788px;
 }
 
-.login .intelligenziamelo-ia-DoXnc9 {
+.sign-up .intelligenziamelo-ia-YrOcOp {
     background-color: transparent;
     height: 68px;
     left: 124px;
@@ -290,228 +301,299 @@ input:focus {
     width: 557px;
 }
 
-.login .group-4-DoXnc9 {
+.sign-up .group-5-YrOcOp {
     background-color: transparent;
-    height: 184px;
-    left: 66px;
+    height: 695px;
+    left: 54px;
     position: absolute;
-    top: 657px;
+    top: 196px;
     width: 681px;
 }
 
-.login .login-with-google-Nw1ux8 {
-    cursor: pointer;
-    height: 78px;
-    left: 0px;
+.sign-up .name-PJrbce {
+    height: 77px;
+    left: 2px;
     top: 0px;
-    width: 681px;
+    width: 293px;
 }
 
-.login .rectangle-2-GZUKvM {
-    background-color: #0328ee;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px #0000001c;
-    height: 78px;
-    left: 0px;
-    mix-blend-mode: normal;
-    position: absolute;
-    top: 0px;
-    width: 681px;
+.sign-up .rectangle-4-0fFd4l {
+    width: 289px;
 }
 
-.login .group-1-GZUKvM {
-    background-color: transparent;
-    height: 32px;
-    left: 245px;
-    position: absolute;
-    top: 25px;
-    width: 195px;
-}
-
-.login .search-1-b0J7XT {
-    background-color: transparent;
-    height: 32px;
-    left: 0px;
-    mix-blend-mode: normal;
-    position: absolute;
-    top: 0px;
-    width: 32px;
-}
-
-.login .login-with-google-b0J7XT {
-    color: #ffffff;
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
+.sign-up .name-0fFd4l {
     height: auto;
-    left: 51px;
+    left: 7px;
     letter-spacing: 0.00px;
-    line-height: 21.7px;
+    line-height: 16.3px;
     mix-blend-mode: normal;
     text-align: left;
-    top: 5px;
+    top: 14px;
     white-space: nowrap;
-    width: auto;
+    width: 40px;
 }
 
-.login .login-with-facebook-Nw1ux8 {
-    cursor: pointer;
-    height: 78px;
-    left: 0px;
-    top: 106px;
-    width: 681px;
-}
-
-.login .rectangle-3-9MxaOI {
-    background-color: #0328ee;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px #0000001c;
-    height: 78px;
-    left: 0px;
-    mix-blend-mode: normal;
-    position: absolute;
-    top: 0px;
-    width: 681px;
-}
-
-.login .group-2-9MxaOI {
+.sign-up .mario-0fFd4l {
     background-color: transparent;
-    height: 32px;
-    left: 240px;
-    position: absolute;
-    top: 25px;
-    width: 202px;
-}
-
-.login .login-with-facebook-xbadTU {
-    color: #ffffff;
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 38px;
-    letter-spacing: 0.00px;
-    line-height: 21.7px;
-    mix-blend-mode: normal;
-    text-align: left;
-    top: 5px;
-    white-space: nowrap;
-    width: auto;
-}
-
-.login .vector-xbadTU {
-    height: 32px;
-    left: 0px;
-    top: 0px;
-    width: 16px;
-}
-
-.login .or-DoXnc9 {
+    border: 0;
     height: 22px;
-    left: 69px;
-    top: 618px;
-    width: 675px;
-}
-
-.login .line-1-xqUhjR {
-    background-color: transparent;
-    height: 1px;
-    left: 0px;
-    object-fit: cover;
+    left: 7px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
     position: absolute;
-    top: 10px;
-    width: 292px;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 255px;
 }
 
-.login .line-2-xqUhjR {
+.sign-up .mario-0fFd4l::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .surname-PJrbce {
+    height: 77px;
+    left: 388px;
+    top: 0px;
+    width: 293px;
+}
+
+.sign-up .rectangle-4-7wx7FG {
+    width: 289px;
+}
+
+.sign-up .surname-7wx7FG {
+    height: auto;
+    left: 8px;
+    letter-spacing: 0.00px;
+    line-height: 16.3px;
+    mix-blend-mode: normal;
+    text-align: left;
+    top: 14px;
+    white-space: nowrap;
+    width: 75px;
+}
+
+.sign-up .rossi-7wx7FG {
     background-color: transparent;
-    height: 1px;
+    border: 0;
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 268px;
+}
+
+.sign-up .rossi-7wx7FG::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .number-PJrbce {
+    left: 0px;
+}
+
+.sign-up .rectangle-4-67jqON {
+    width: 294px;
+}
+
+.sign-up .phone-number-67jqON {
+    background-color: transparent;
+    height: auto;
+    left: 8px;
+    letter-spacing: 0.00px;
+    line-height: 16.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 14px;
+    white-space: nowrap;
+    width: 96px;
+}
+
+.sign-up .x3331234567-67jqON {
+    background-color: transparent;
+    border: 0;
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 273px;
+}
+
+.sign-up .x3331234567-67jqON::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .number-aVqWou {
     left: 385px;
-    object-fit: cover;
-    position: absolute;
-    top: 10px;
-    width: 288px;
 }
 
-.login .or-xqUhjR {
-    color: #2e2e2e;
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 327px;
-    letter-spacing: 0.00px;
-    line-height: 21.7px;
-    mix-blend-mode: normal;
-    text-align: left;
-    top: 0px;
-    white-space: nowrap;
-    width: auto;
+.sign-up .rectangle-4-wRmpWt {
+    width: 294px;
 }
 
-.login .group-5-DoXnc9 {
+.sign-up .country-wRmpWt {
     background-color: transparent;
-    height: 389px;
-    left: 71px;
-    position: absolute;
-    top: 199px;
-    width: 675px;
-}
-
-.login .forgot-password-BNm2ax {
-    background-color: transparent;
-    color: #6257db;
-    cursor: pointer;
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
     height: auto;
-    left: 525px;
+    left: 8px;
     letter-spacing: 0.00px;
-    line-height: 21.7px;
+    line-height: 16.3px;
     mix-blend-mode: normal;
     position: absolute;
     text-align: left;
-    top: 198px;
+    top: 14px;
     white-space: nowrap;
-    width: auto;
+    width: 96px;
 }
 
-.login .email-BNm2ax {
+.sign-up .italy-wRmpWt {
+    background-color: transparent;
+    border: 0;
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 273px;
+}
+
+.sign-up .italy-wRmpWt::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .birthday-PJrbce {
+    height: 77px;
+    left: 385px;
+    top: 110px;
+    width: 298px;
+}
+
+.sign-up .rectangle-4-0kZzsS {
+    width: 294px;
+}
+
+.sign-up .birthday-0kZzsS {
+    height: auto;
+    left: 8px;
+    letter-spacing: 0.00px;
+    line-height: 16.3px;
+    mix-blend-mode: normal;
+    text-align: left;
+    top: 14px;
+    white-space: nowrap;
+    width: 96px;
+}
+
+.sign-up .x22011997-0kZzsS {
+    background-color: transparent;
+    border: 0;
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 273px;
+}
+
+.sign-up .x22011997-0kZzsS::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .gender-PJrbce {
     height: 77px;
     left: 0px;
-    top: 0px;
+    top: 110px;
+    width: 298px;
+}
+
+.sign-up .rectangle-4-VFRFfe {
+    width: 294px;
+}
+
+.sign-up .gender-VFRFfe {
+    height: auto;
+    left: 8px;
+    letter-spacing: 0.00px;
+    line-height: 16.3px;
+    mix-blend-mode: normal;
+    text-align: left;
+    top: 14px;
+    white-space: nowrap;
+    width: 96px;
+}
+
+.sign-up .man-VFRFfe {
+    background-color: transparent;
+    border: 0;
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 40px;
+    white-space: nowrap;
+    width: 273px;
+}
+
+.sign-up .man-VFRFfe::placeholder {
+    color: #fffdfd99;
+}
+
+.sign-up .email-PJrbce {
+    height: 77px;
+    left: 2px;
+    top: 329px;
     width: 675px;
 }
 
-.login .rectangle-4-2qubxn {
-    background-color: var(--blue-charcoal);
-    border-radius: 8px;
-    height: 77px;
-    left: 0px;
-    mix-blend-mode: normal;
-    position: absolute;
-    top: 0px;
+.sign-up .rectangle-4-mgEAqx {
     width: 671px;
 }
 
-.login .vector-2qubxn {
+.sign-up .icon-mail-mgEAqx {
+    background-color: transparent;
     height: 24px;
     left: 23px;
+    mix-blend-mode: normal;
+    position: absolute;
     top: 29px;
     width: 30px;
 }
 
-.login .email-2qubxn {
-    color: var(--romance);
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-s);
-    font-style: normal;
-    font-weight: 400;
+.sign-up .email-mgEAqx {
     height: auto;
     left: 82px;
     letter-spacing: 0.00px;
@@ -523,14 +605,9 @@ input:focus {
     width: auto;
 }
 
-.login .examplegmailcom-2qubxn {
+.sign-up .examplegmailcom-mgEAqx {
     background-color: transparent;
     border: 0;
-    color: var(--romance);
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 700;
     height: 22px;
     left: 82px;
     letter-spacing: 0.00px;
@@ -542,21 +619,21 @@ input:focus {
     text-align: left;
     top: 37px;
     white-space: nowrap;
-    width: 180px;
+    width: 338px;
 }
 
-.login .examplegmailcom-2qubxn::placeholder {
+.sign-up .examplegmailcom-mgEAqx::placeholder {
     color: #fffdfd99;
 }
 
-.login .password-BNm2ax {
+.sign-up .password-PJrbce {
     height: 77px;
-    left: 0px;
-    top: 97px;
+    left: 2px;
+    top: 426px;
     width: 675px;
 }
 
-.login .rectangle-5-dHpg5E {
+.sign-up .rectangle-5-1BgW39 {
     background-color: var(--blue-charcoal);
     border-radius: 8px;
     height: 77px;
@@ -567,19 +644,16 @@ input:focus {
     width: 671px;
 }
 
-.login .group-dHpg5E {
+.sign-up .icon-key-1BgW39 {
+    background-color: transparent;
     height: 27px;
     left: 26px;
+    position: absolute;
     top: 27px;
     width: 27px;
 }
 
-.login .password-dHpg5E {
-    color: var(--romance);
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-s);
-    font-style: normal;
-    font-weight: 400;
+.sign-up .password-1BgW39 {
     height: auto;
     left: 82px;
     letter-spacing: 0.00px;
@@ -591,14 +665,9 @@ input:focus {
     width: auto;
 }
 
-.login .x-dHpg5E {
+.sign-up .x-1BgW39 {
     background-color: transparent;
     border: 0;
-    color: var(--romance);
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 700;
     height: 22px;
     left: 82px;
     letter-spacing: 0.00px;
@@ -610,14 +679,14 @@ input:focus {
     text-align: left;
     top: 43px;
     white-space: nowrap;
-    width: 95px;
+    width: 294px;
 }
 
-.login .x-dHpg5E::placeholder {
+.sign-up .x-1BgW39::placeholder {
     color: #fffdfd99;
 }
 
-.login .bieye-fill-dHpg5E {
+.sign-up .icon-eye-1BgW39 {
     background-color: transparent;
     cursor: pointer;
     height: 22px;
@@ -628,26 +697,53 @@ input:focus {
     width: 22px;
 }
 
-.login .button-BNm2ax {
+.sign-up .button-PJrbce {
     background-color: transparent;
     cursor: pointer;
     height: 77px;
-    left: 0px;
+    left: 2px;
     position: absolute;
-    top: 244px;
+    top: 618px;
     width: 671px;
 }
 
-.login .remember-me-BNm2ax {
+.sign-up .have-an-account-login-PJrbce {
+    background-color: transparent;
+    color: transparent;
     cursor: pointer;
-    height: 22px;
-    left: 2px;
-    top: 198px;
-    width: 155px;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 468px;
+    letter-spacing: 0.00px;
+    line-height: 21.7px;
+    position: absolute;
+    text-align: left;
+    top: 577px;
+    white-space: nowrap;
+    width: 211px;
 }
 
-.login .remember-me-iByq92 {
-    color: var(--romance);
+.sign-up .span1-pZQDtZ {
+    color: #6257db;
+    font-style: normal;
+}
+
+.sign-up .remember-me-YrOcOp {
+    background-color: transparent;
+    cursor: pointer;
+    height: 22px;
+    left: 70px;
+    position: absolute;
+    top: 731px;
+    width: 304px;
+}
+
+.sign-up .accept-the-conditions-conditions-gfJt7z {
+    background-color: transparent;
+    color: transparent;
     font-family: var(--font-family-poppins);
     font-size: var(--font-size-m);
     font-style: normal;
@@ -656,14 +752,19 @@ input:focus {
     left: 33px;
     letter-spacing: 0.00px;
     line-height: 21.7px;
-    mix-blend-mode: normal;
+    position: absolute;
     text-align: left;
     top: 0px;
     white-space: nowrap;
     width: auto;
 }
 
-.login .check-iByq92 {
+.sign-up .span1-qrjthD {
+    color: #5d53d4;
+    font-style: normal;
+}
+
+.sign-up .check-gfJt7z {
     background-color: #ebebeb;
     border: 1px solid;
     border-color: #d9d9d9;
@@ -676,72 +777,65 @@ input:focus {
     width: 18px;
 }
 
-.login .dont-have-an-account-register-BNm2ax {
+.sign-up .sign-up-amico-1-rEJZuq {
     background-color: transparent;
-    color: transparent;
-    cursor: pointer;
-    font-family: var(--font-family-poppins);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 190px;
-    letter-spacing: 0.00px;
-    line-height: 21.7px;
+    height: 686px;
+    left: 1058px;
+    mix-blend-mode: normal;
     position: absolute;
-    text-align: left;
-    top: 368px;
-    white-space: nowrap;
-    width: 259px;
+    top: 170px;
+    width: 686px;
 }
 
-.login .span0-3c5mAc {
+.sign-up .birthday {
+    background-color: transparent;
+    position: absolute;
+}
+
+.sign-up .email {
+    background-color: transparent;
+    position: absolute;
+}
+
+.sign-up .gender {
+    background-color: transparent;
+    position: absolute;
+}
+
+.sign-up .name {
+    background-color: transparent;
+    position: absolute;
+}
+
+.sign-up .number {
+    background-color: transparent;
+    height: 77px;
+    position: absolute;
+    top: 220px;
+    width: 298px;
+}
+
+.sign-up .password {
+    background-color: transparent;
+    position: absolute;
+}
+
+.sign-up .rectangle-4 {
+    background-color: var(--blue-charcoal);
+    border-radius: 8px;
+    height: 77px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+}
+
+.sign-up .span0 {
     color: var(--romance);
     font-style: normal;
 }
 
-.login .span1-3c5mAc {
-    color: #6257db;
-    font-style: normal;
-}
-
-.login .email {
+.sign-up .surname {
     background-color: transparent;
-    position: absolute;
-}
-
-.login .group {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .login-with-facebook {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .login-with-google {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .or {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .password {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .remember-me {
-    background-color: transparent;
-    position: absolute;
-}
-
-.login .vector {
-    background-color: transparent;
-    mix-blend-mode: normal;
     position: absolute;
 }
