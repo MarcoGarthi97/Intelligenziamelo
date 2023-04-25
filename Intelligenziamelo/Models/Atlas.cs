@@ -163,5 +163,27 @@ namespace Intelligenziamelo.Models
 
             return gendersList;
         }
+
+        public async Task<List<string>> GetCountries()
+        {
+            List<string> countriesList = new List<string>();
+
+            try
+            {
+                var intelligenziameloDB = GetDatabase().Result;
+
+                IMongoCollection<Countries> countriesAtlas = intelligenziameloDB.GetCollection<Countries>("Countries");
+                var countries = countriesAtlas.Find(x => x.Name != "").ToList();
+
+                foreach (Countries country in countries)
+                    countriesList.Add(country.Name);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return countriesList;
+        }
     }
 }

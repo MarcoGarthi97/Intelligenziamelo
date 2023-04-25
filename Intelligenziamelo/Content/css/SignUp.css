@@ -28,6 +28,16 @@ option{
     background-color: var(--blue-charcoal);
 }
 
+.modal-content{
+    background-color: var(--blue-charcoal);
+    color: white;
+}
+
+#close-modal{
+    background-color: var(--blue-charcoal);
+    color: white;
+}
+
 .screen textarea:focus,
 .screen input:focus {
     outline: none;
@@ -246,10 +256,6 @@ input:focus {
     font-weight: 700;
 }
 
-:root {}
-
-
-/* screen - sign-up */
 
 .sign-up {
     background-color: var(--blue-charcoal);

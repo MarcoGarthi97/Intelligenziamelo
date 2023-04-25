@@ -47,15 +47,15 @@ namespace Intelligenziamelo.Controllers
             return View();
         }
 
-        public Task<bool> Logon(string username, string password)
+        public JsonResult Logon(string username, string password)
         {
             Atlas atlas = new Atlas();
             var result = atlas.Login(username, password).Result;
 
-            return Task.FromResult<bool>(result);
+            return Json(result);
         }
 
-        public Task<bool> Register(string json)
+        public JsonResult Register(string json)
         {
             var result = JsonConvert.DeserializeObject<JToken>(json);
             DateTime birthday = Convert.ToDateTime(result["Birthday"].ToString());
@@ -67,29 +67,37 @@ namespace Intelligenziamelo.Controllers
             Atlas atlas = new Atlas();
             var insert = atlas.InsertUsers(user, descriptionUser).Result;
 
-            return Task.FromResult<bool>(insert);
+            return Json(insert);
         }
 
-        public Task<bool> CheckUsername(string username)
+        public JsonResult CheckUsername(string username)
         {
             Atlas atlas = new Atlas();
             var result = atlas.CheckUsername(username);
 
-            return result;
+            return Json(result);
         }
 
-        public Task<bool> CheckEmail(string email)
+        public JsonResult CheckEmail(string email)
         {
             Atlas atlas = new Atlas();
             var result = atlas.CheckEmail(email);
 
-            return result;
+            return Json(result);
         }
 
         public JsonResult GetGenders()
         {
             Atlas atlas = new Atlas();
             var result = atlas.GetGender();
+
+            return Json(result.Result);
+        }
+
+        public JsonResult GetCountries()
+        {
+            Atlas atlas = new Atlas();
+            var result = atlas.GetCountries();
 
             return Json(result.Result);
         }

@@ -18,6 +18,13 @@
     const _divUsername = document.getElementById('div-username')
     const _divEmail = document.getElementById('div-email')
 
+    getGenders()
+    getCountries()
+
+    _conditions.addEventListener('click', function(){
+        $('#modal').modal('show')
+    })
+
     _login.addEventListener('click', function(){
         $.ajax({
             url: "/Home/GoToLogin",
@@ -43,8 +50,7 @@
                     data: {username: username},
                     method: "POST",
                     success: function(result){
-                        console.log(result)
-                        if(!result){
+                        if(!result.Result){
                             _labelUsername.innerHTML = "Username already in use"
                             _divUsername.style.backgroundColor = "#e92828"
                         }
@@ -77,8 +83,7 @@
                     data: {email: email},
                     method: "POST",
                     success: function(result){
-                        console.log(result)
-                        if(!result){
+                        if(!result.Result){
                             _labelEmail.innerHTML = "Email already in use"
                             _divEmail.style.backgroundColor = "#e92828"
                         }
@@ -149,7 +154,6 @@
         }
     })   
     
-    getGenders()
     function getGenders(){
         $.ajax({
             url: "/Home/GetGenders",
@@ -167,4 +171,23 @@
             }
         })
     }
+
+    function getCountries(){
+        $.ajax({
+            url: "/Home/GetCountries",
+            method: "POST",
+            success: function(result){
+                var options = ""
+                result.forEach(function(key){
+                    options += '<option value = "' + key + '">' + key.charAt(0).toUpperCase() + key.slice(1); + '</option>'
+                })
+
+                $("#country").append(options)
+            },
+            error: function(e){
+                console.log(e)
+            }
+        })
+    }
+
 })
