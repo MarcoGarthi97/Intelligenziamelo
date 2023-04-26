@@ -160,6 +160,7 @@ namespace Intelligenziamelo.Models
             {
 
             }
+            gendersList.Sort();
 
             return gendersList;
         }
@@ -182,6 +183,7 @@ namespace Intelligenziamelo.Models
             {
 
             }
+            countriesList.Sort();
 
             return countriesList;
         }
